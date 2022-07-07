@@ -1,0 +1,31 @@
+﻿@inject Data _data
+
+<h1>Counter</h1>
+
+
+<p>Current count: @_data.Count</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="OpenFile">Open File</button>
+
+
+
+@code {
+    protected override void OnInitialized()
+    {
+        _data.UpdateOnBlazor = UpdateOn;
+    }
+    private void IncrementCount()
+    {
+        _data.Count++;
+        _data.Form.label1.Text = _data.Count.ToString();
+    }
+    void UpdateOn()
+    {
+        StateHasChanged();
+    }
+    void OpenFile()
+    {
+        _data.Form.openFileDialog1.ShowDialog();
+    }
+}
