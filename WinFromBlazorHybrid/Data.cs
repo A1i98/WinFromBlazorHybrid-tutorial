@@ -1,4 +1,4 @@
-﻿namespace WinFromBlazorHibrid
+﻿namespace WinFromBlazorHybrid
 {
     internal class Data
     {

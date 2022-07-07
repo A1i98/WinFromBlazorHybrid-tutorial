@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WinFromBlazorHibrid
+namespace WinFromBlazorHybrid
 {
     public partial class Form1 : Form
     {

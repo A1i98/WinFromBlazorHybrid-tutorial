@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFromBlazorHibrid", "WinFromBlazorHibrid\WinFromBlazorHibrid.csproj", "{B7B26C18-83D7-43D2-9574-4F9B5A7E3434}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFromBlazorHybrid", "WinFromBlazorHybrid\WinFromBlazorHybrid.csproj", "{B7B26C18-83D7-43D2-9574-4F9B5A7E3434}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

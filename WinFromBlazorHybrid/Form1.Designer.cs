@@ -1,4 +1,4 @@
-﻿namespace WinFromBlazorHibrid
+﻿namespace WinFromBlazorHybrid
 {
     partial class Form1
     {

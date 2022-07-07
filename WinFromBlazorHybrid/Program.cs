@@ -1,4 +1,4 @@
-namespace WinFromBlazorHibrid
+namespace WinFromBlazorHybrid
 {
     internal static class Program
     {

@@ -1,5 +1,8 @@
 # آموزش استفاده از `Blazor` در `WindowsForm`
 
+![image info](./2022-07-07_23-11.png)
+
+
 1 - اول یک پروژه جدید ایجاد میکنید 
 
 2 - به قسمت `NuGet Package Manager` رفته و عبارت `Microsoft.AspNetCore.Components.WebView.WindowsForms` جستجو میکنید و نصب میکنید
