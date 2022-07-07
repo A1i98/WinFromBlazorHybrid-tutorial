@@ -1,5 +1,5 @@
 ﻿@inject Data _data
-
+@inject NavigationManager nav
 <h1>Counter</h1>
 
 
@@ -8,9 +8,53 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 <button class="btn btn-primary" @onclick="OpenFile">Open File</button>
 
+<button class="btn btn-primary" @onclick="showT">Show</button>
+
+
+@if (show)
+{
+<Two/>  
+}
+
+<div class="examples column-charts">
+
+    <table class="charts-css column show-heading show-data-on-hover show-primary-axis reverse" style="height: 200px;">
+        <caption>Years Compared</caption>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Progress</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"> 2016 </th>
+                <td style="--size: 0.2"> <span class="data">20</span> <span class="tooltip">data: 20<br>more info</span> </td>
+            </tr>
+            <tr>
+                <th scope="row"> 2017 </th>
+                <td style="--size: 0.4"> <span class="data">40</span> <span class="tooltip">data: 40<br>more info</span> </td>
+            </tr>
+            <tr>
+                <th scope="row"> 2018 </th>
+                <td style="--size: 0.6"> <span class="data">60</span> <span class="tooltip">data: 60<br>more info</span> </td>
+            </tr>
+            <tr>
+                <th scope="row"> 2019 </th>
+                <td style="--size: 0.8"> <span class="data">80</span> <span class="tooltip">data: 80<br>more info</span> </td>
+            </tr>
+            <tr>
+                <th scope="row"> 2020 </th>
+                <td style="--size: 1"> <span class="data">100</span> <span class="tooltip">data: 100<br>more info</span> </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
 
 
 @code {
+    bool show = false;
     protected override void OnInitialized()
     {
         _data.UpdateOnBlazor = UpdateOn;
@@ -27,5 +71,9 @@
     void OpenFile()
     {
         _data.Form.openFileDialog1.ShowDialog();
+    }
+    void showT()
+    {
+        show = !show;
     }
 }
